@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caramelo Mask 🐶</title>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -148,7 +147,7 @@
             margin-top: 15px;
         }
 
-        button {
+        button, a.btn {
             padding: 10px 20px;
             border: none;
             border-radius: 8px;
@@ -156,6 +155,20 @@
             cursor: pointer;
             transition: all 0.2s;
         }
+
+        a.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: var(--primary);
+            color: white;
+            text-decoration: none; 
+            margin-top: 20px;        
+        }        
 
         #btn-unmask {
             background: #e2e8f0;
@@ -188,6 +201,7 @@
             background: var(--border);
             margin: 40px 0;
         }
+        .text-center{ text-align:center; }
     </style>
 </head>
 <body>
@@ -196,6 +210,9 @@
         <header>
             <h1>🐶 <br>Caramelo Mask</h1>
             <p class="subtitle">Máscaras javascript leves e sem dependências. Moderno & Brasileiro.</p>
+            <div class="text-center">
+                <a class="btn" href="https://github.com/gigabaiteti/caramelo-mask/" target="_blank">Download no GitHub</a>
+            </div>
         </header>
 
         <h2>Máscaras Comuns</h2>
@@ -290,9 +307,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Importa a biblioteca (agora renomeada para caramelo.mask.js se o usuário alterou, mas vou manter o nome gerado anteriormente ou o que estiver no dir) -->
-    <!-- Step 146 confirmed 'caramelo.mask.js' exists in dir -->
     <script src="caramelo.mask.js"></script>
     <script>
         // Exemplo de uso manual via JS
