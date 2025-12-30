@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caramelo Mask 🐶</title>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -148,7 +147,7 @@
             margin-top: 15px;
         }
 
-        button {
+        button, a.btn {
             padding: 10px 20px;
             border: none;
             border-radius: 8px;
@@ -156,6 +155,20 @@
             cursor: pointer;
             transition: all 0.2s;
         }
+
+        a.btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            background: var(--primary);
+            color: white;
+            text-decoration: none; 
+            margin-top: 20px;        
+        }        
 
         #btn-unmask {
             background: #e2e8f0;
@@ -188,6 +201,7 @@
             background: var(--border);
             margin: 40px 0;
         }
+        .text-center{ text-align:center; }
     </style>
 </head>
 <body>
@@ -196,6 +210,9 @@
         <header>
             <h1>🐶 <br>Caramelo Mask</h1>
             <p class="subtitle">Lightweight, dependency-free JavaScript masks. Modern & Brazilian.</p>
+            <div class="text-center">
+                <a class="btn" href="https://github.com/gigabaiteti/caramelo-mask/" target="_blank">Download on GitHub</a>
+            </div>            
         </header>
 
         <h2>Common Masks</h2>
